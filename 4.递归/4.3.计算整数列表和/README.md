@@ -42,7 +42,7 @@ $$
 我们如何能把这个想法变成一个 Python 程序？ 首先，让我们以 Python 列表的形式重述求和问题。 我们可以说列表 `numList` 的和是列表的第一个元素`numList[0]` 和列表其余部分`numList[1:]` 之和的总和。 以函数形式表述：
 
 $$
-listSum(numList)=first(numList)+listSum(numList)
+listSum(numList)=first(numList)+rest(numList)
 $$
 
 在这个方程式中，`first(numList)` 返回列表的第一个元素，`rest(numList)` 返回除第一个元素之外的所有元素列表。这很容易在 Python 中表示，如 ActiveCode 2 中所示。
